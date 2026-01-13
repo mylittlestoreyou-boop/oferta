@@ -5,50 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seu Plano Personalizado</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background-color: #fff; }
         header { background: #1a1a1a; color: white; padding: 40px 20px; text-align: center; }
         .container { max-width: 700px; margin: auto; padding: 20px; }
-        .highlight { background: #fff3cd; padding: 5px; font-weight: bold; }
-        .cta-button { display: inline-block; background: #28a745; color: white; padding: 22px 40px; text-decoration: none; font-size: 1.3em; border-radius: 10px; font-weight: bold; margin-top: 20px; width: 100%; box-sizing: border-box; text-align: center; }
+        .badge-vendas { color: #27ae60; font-weight: bold; letter-spacing: 1px; margin-bottom: 10px; display: block; }
+        h1 { font-size: 1.8em; margin-top: 0; }
+        .cta-button { 
+            display: inline-block; 
+            background: #28a745; 
+            color: white; 
+            padding: 22px 40px; 
+            text-decoration: none; 
+            font-size: 1.3em; 
+            border-radius: 10px; 
+            font-weight: bold; 
+            margin-top: 20px; 
+            width: 100%; 
+            box-sizing: border-box; 
+            text-align: center; 
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+            transition: 0.3s;
+        }
+        .cta-button:hover { background: #218838; transform: scale(1.02); }
         .benefit-card { background: #f9f9f9; padding: 20px; margin-bottom: 15px; border-left: 6px solid #28a745; border-radius: 4px; }
-        .price { font-size: 2em; color: #e74c3c; font-weight: bold; text-align: center; margin: 30px 0; }
-        .old-price { text-decoration: line-through; color: #7f8c8d; font-size: 0.5em; }
+        .price { font-size: 2.2em; color: #e74c3c; font-weight: bold; text-align: center; margin: 30px 0; line-height: 1.1; }
+        .old-price { text-decoration: line-through; color: #7f8c8d; font-size: 0.5em; display: block; margin-bottom: 5px; }
+        .guarantee { text-align: center; font-size: 0.85em; color: #7f8c8d; margin-top: 25px; border-top: 1px solid #eee; padding-top: 20px; }
     </style>
 </head>
 <body>
 
 <header>
-    <p style="color: #27ae60; font-weight: bold;">PERFIL ANALISADO COM SUCESSO</p>
+    <span class="badge-vendas">PERFIL ANALISADO COM SUCESSO</span>
     <h1>Seu plano para destravar o metabolismo está pronto!</h1>
 </header>
 
 <div class="container">
-    <p>Com base nas suas respostas, você precisa de um método que não exija horas na cozinha e que foque em alimentos que geram saciedade.</p>
+    <p>Com base nas suas respostas, identificamos que o seu corpo precisa de uma estratégia que foque em <strong>densidade nutricional</strong> e praticidade, sem exigir que você gaste fortunas no mercado.</p>
 
-    <h2>O que você vai receber hoje:</h2>
+    <h2 style="text-align: center; margin-top: 40px;">O que você vai receber:</h2>
     
     <div class="benefit-card">
-        <strong>1. Plano Alimentar Exclusivo:</strong> Cardápio passo a passo para o seu objetivo.
+        <strong>✅ Plano Alimentar Exclusivo:</strong> O cardápio exato para o seu perfil de metabolismo, focado em queima calórica.
     </div>
     <div class="benefit-card">
-        <strong>2. Lista de Compras Econômica:</strong> Como comer bem gastando pouco no mercado.
+        <strong>✅ Lista de Compras Econômica:</strong> Saiba exatamente o que comprar para comer bem gastando pouco.
     </div>
     <div class="benefit-card">
-        <strong>3. Guia de Substituições:</strong> Nunca mais fique sem saber o que comer se faltar um ingrediente.
+        <strong>✅ Guia de Substituições:</strong> Aprenda a trocar alimentos sem errar na dieta e sem passar fome.
     </div>
 
     <div class="price">
-        <span class="old-price">De R$ 97,00 por apenas</span><br>
-        12x R$ 4,90 <br>
-        <span style="font-size: 0.6em;">ou R$ 49,90 à vista</span>
+        <span class="old-price">De R$ 97,00 por apenas</span>
+        R$ 49,90 à vista
+        <div style="font-size: 0.4em; color: #333; margin-top: 10px;">Ou em até 12x no cartão</div>
     </div>
 
-    <a href="COLE_SEU_LINK_DA_HOTMART_AQUI" class="cta-button">SIM! QUERO MEU PLANO AGORA</a>
+    <a href="https://pay.hotmart.com/H98978050J" class="cta-button">QUERO MEU PLANO AGORA</a>
 
-    <p style="text-align: center; font-size: 0.9em; margin-top: 20px;">
-        ✅ Garantia incondicional de 7 dias<br>
-        🔒 Compra 100% segura via Hotmart
-    </p>
+    <div class="guarantee">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Seal_of_Guarantee.svg/1200px-Seal_of_Guarantee.svg.png" width="40" style="margin-bottom: 10px; opacity: 0.5;"><br>
+        <strong>Sua compra está protegida!</strong><br>
+        Você tem 7 dias de garantia incondicional. Se não gostar, devolvemos seu dinheiro.<br>
+        <small>Pagamento processado com segurança pela <strong>Hotmart</strong>.</small>
+    </div>
 </div>
 
 </body>
